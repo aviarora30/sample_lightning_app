@@ -3,7 +3,7 @@
  * SDK version: 4.7.0
  * CLI version: 2.7.1
  * 
- * Generated: Wed, 26 Jan 2022 00:36:09 GMT
+ * Generated: Wed, 26 Jan 2022 01:00:03 GMT
  */
 
 var APP_com_metrological_app_vod_example = (function () {
@@ -6695,7 +6695,14 @@ var APP_com_metrological_app_vod_example = (function () {
     icon: 'visible',
     action: '$showHide'
   }];
-  const videos = ['http://video.metrological.com/surfing.mp4', 'http://video.metrological.com/hot_town.mp4', 'http://video.metrological.com/fireworks_paris.mp4', 'http://video.metrological.com/drop.mp4', 'http://video.metrological.com/iceland.mp4', 'http://video.metrological.com/stockholm.mp4', 'http://video.metrological.com/throw-error.mp4'];
+  const videos = ['http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4', 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4', 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4', 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4', 'https://media.whooshkaa.com/show/13017/episode/950409.mp3',
+  /* 'http://video.metrological.com/surfing.mp4',
+  'http://video.metrological.com/hot_town.mp4',
+  'http://video.metrological.com/fireworks_paris.mp4',
+  'http://video.metrological.com/drop.mp4',
+  'http://video.metrological.com/iceland.mp4',
+  'http://video.metrological.com/stockholm.mp4', */
+  'http://video.metrological.com/throw-error.mp4'];
 
   /**
    * Copyright 2021 Comcast Cable Communications Management, LLC
