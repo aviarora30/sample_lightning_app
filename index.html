@@ -10,12 +10,11 @@
         </style>
     </head>
     <body>
-        <script src="./js/polyfills.js"></script>
-        <script src="./js/lightning.es5.min.js"></script>
-        <script src="./js/appBundle.es5.js"></script>
+        <script src="./js/lightning.min.js"></script>
+        <script src="./js/appBundle.js"></script>
 
         <script>
-            var appSettings = {
+            const appSettings = {
   "stage": {
     "clearColor": "0x00000000",
     "useImageWorker": true
@@ -28,7 +27,7 @@
   "id": "com.metrological.app.vod-example"
 }
 
-            var platformSettings = {
+            const platformSettings = {
   "proxy": false,
   "path": "./static",
   "proxyUrl": "//cdn.metrological.com/proxy",
@@ -37,16 +36,15 @@
   "showVersion": false
 }
 
-            var appData = {}
+            const appData = {}
 
-            var bundle = window.APP_com_metrological_app_vod_example;
-
+            let bundle = window.APP_com_metrological_app_vod_example
             // support rollup and esbuild
             if (typeof bundle !== 'function') {
-              bundle = bundle.default;
+              bundle = bundle.default
             }
 
-            var app = bundle(appSettings, platformSettings, appData)
+            const app = bundle(appSettings, platformSettings, appData)
             document.body.appendChild(app.stage.getCanvas())
 
         </script>
